@@ -30,7 +30,7 @@
     <option name="generalSettings">
       <MavenGeneralSettings>
         <option name="localRepository" value="D:\software\apache\maven-repository" />
-        <option name="mavenHome" value="$PROJECT_DIR$/../../../../../../../../software/apache/apache-maven-3.6.1" />
+        <option name="mavenHome" value="D:\software\apache\apache-maven-3.6.1" />
         <option name="userSettingsFile" value="D:\software\apache\apache-maven-3.6.1\conf\settings.xml" />
       </MavenGeneralSettings>
     </option>
@@ -64,7 +64,7 @@
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
-    <property name="settings.editor.selected.configurable" value="MavenSettings" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="ReactorSettings">
     <option name="notificationShown" value="true" />
@@ -118,6 +118,17 @@
     </option>
   </component>
   <component name="RunManager" selected="HTTP Request.rest-api_2#1">
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="rest-api_2#1" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" path="$APPLICATION_CONFIG_DIR$/scratches/rest-api_2.http" runType="Run single request">
       <method v="2" />
     </configuration>
@@ -183,10 +194,7 @@
       </list>
     </recent_temporary>
   </component>
-  <component name="SpellCheckerSettings" BundledDictionaries="0" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" Dictionaries="0" CorrectionsLimit="5" DefaultDictionary="application-level" UseSingleDictionary="true" />
-  <component name="SvnConfiguration">
-    <configuration />
-  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="f7b95f46-ad64-46fd-abf0-0541f99df354" name="Default Changelist" comment="" />
@@ -204,17 +212,10 @@
       <workItem from="1617679286183" duration="1511000" />
       <workItem from="1617682563551" duration="2341000" />
       <workItem from="1617757534504" duration="19274000" />
-      <workItem from="1620548690025" duration="754000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="2" />
-  </component>
-  <component name="WindowStateProjectService">
-    <state x="493" y="184" key="SettingsEditor" timestamp="1620548730135">
-      <screen x="64" y="0" width="1856" height="1080" />
-    </state>
-    <state x="493" y="184" key="SettingsEditor/64.0.1856.1080@64.0.1856.1080" timestamp="1620548730135" />
+    <option name="version" value="3" />
   </component>
 </project>

@@ -1,0 +1,62 @@
+spring:
+  application:
+    name: gateway
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 127.0.0.1:8848
+        namespace: dev
+      config:
+        server-addr: 127.0.0.1:8848
+        namespace: dev
+        group: DEFAULT_GROUP
+        file-extension: yaml
+    sentinel:
+      transport:
+        dashboard: 127.0.0.1:8080
+        port: 8719
+    gateway:
+      routes:
+        - id: service-user
+          uri: lb://service-user
+          predicates:
+            - Path=/api/user/**
+          filters:
+            - StripPrefix=1
+        - id: service-code
+          uri: lb://service-code
+          predicates:
+            - Path=/api/code/**
+          filters:
+            - StripPrefix=1
+        - id: service-email
+          uri: lb://service-email
+          predicates:
+            - Path=/api/email/**
+          filters:
+            - StripPrefix=1
+
+server:
+  port: 9002
+
+dubbo:
+  scan:
+    # dubbo 服务扫描基准包
+    base-packages: com.zhuzx
+  protocol:
+    # dubbo 协议
+    name: dubbo
+    # dubbo 协议端⼝（ -1 表示⾃增端⼝，从 20880 开始）
+    port: -1
+  registry:
+    # 挂载到 Spring Cloud 的注册中⼼
+    address: spring-cloud://localhost
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+  endpoint:
+    health:
+      show-details: always
